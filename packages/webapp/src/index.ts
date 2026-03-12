@@ -1,7 +1,5 @@
 /**
  * @platform-core/webapp
- * React web–specific utilities.
- * Add and re-export modules below.
+ * React web–specific utilities (browser-only; not for mobileapp).
  */
-// export * from './formatUtils';
-// export * from './browserUtils';
+export * from './browserUtils';

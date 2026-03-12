@@ -1,0 +1,8 @@
+{
+  "name": "platform-core",
+  "private": true,
+  "description": "Core shared packages for web, mobile, and backend services.",
+  "workspaces": [
+    "packages/*"
+  ]
+}

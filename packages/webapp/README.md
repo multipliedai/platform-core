@@ -25,7 +25,7 @@ import { formatDate } from '@platform-core/webapp'
 
 ## Adding New Exports
 
-1. Add the utility in the appropriate subfolder.  
-2. Re-export from this package’s main `index.ts`.  
+1. Add the utility in the appropriate subfolder under `src/`.  
+2. Re-export from this package’s `src/index.ts`.  
 
-See the root [platform-core README](../README.md) for repository structure and best practices.
+See the root [platform-core README](../../README.md) for repository structure and best practices.

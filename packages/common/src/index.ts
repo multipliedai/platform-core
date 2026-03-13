@@ -12,7 +12,16 @@ import moment from "moment";
 import { toLocaleStringWithTimezone, toLocaleTimeStringWithTimezone, toLocaleDateStringWithTimezone, getStartOfDayInTimezone, getEndOfDayInTimezone } from "./timezone-date-conversion";
 import { DateTime } from "luxon";
 
-export const uniqueId = () => uuid();
+// Custom UUID v4 generator
+function generateUUID(): string {
+  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+    const r = Math.random() * 16 | 0;
+    const v = c === 'x' ? r : (r & 0x3 | 0x8);
+    return v.toString(16);
+  });
+}
+
+export const uniqueId = () => generateUUID();
 
 export const onlyUnique = <T>(value: T, index: number, array: T[]) => {
   return array.indexOf(value) === index;

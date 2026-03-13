@@ -24,6 +24,8 @@ __metadata:
   resolution: "@platform-core/mobileapp@workspace:packages/mobileapp"
   dependencies:
     "@platform-core/common": "npm:1.0.0"
+    "@react-native-async-storage/async-storage": "npm:^3.0.1"
+    jwt-decode: "npm:^4.0.0"
   languageName: unknown
   linkType: soft
 
@@ -44,6 +46,18 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@react-native-async-storage/async-storage@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "@react-native-async-storage/async-storage@npm:3.0.1"
+  dependencies:
+    idb: "npm:8.0.3"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: 10c0/38d95c6f743e05e17528749d0a5293829ae77f0fed6e49936327d853946fac7b020029adb9dbb7fcfee089c6b922437f843099558a80356da7ec58b3b97b9c34
+  languageName: node
+  linkType: hard
+
 "@types/lodash@npm:^4.17.0":
   version: 4.17.24
   resolution: "@types/lodash@npm:4.17.24"
@@ -62,6 +76,20 @@ __metadata:
   version: 10.0.0
   resolution: "@types/uuid@npm:10.0.0"
   checksum: 10c0/9a1404bf287164481cb9b97f6bb638f78f955be57c40c6513b7655160beb29df6f84c915aaf4089a1559c216557dc4d2f79b48d978742d3ae10b937420ddac60
+  languageName: node
+  linkType: hard
+
+"idb@npm:8.0.3":
+  version: 8.0.3
+  resolution: "idb@npm:8.0.3"
+  checksum: 10c0/421cd9a3281b7564528857031cc33fd9e95753f8191e483054cb25d1ceea7303a0d1462f4f69f5b41606f0f066156999e067478abf2460dfcf9cab80dae2a2b2
+  languageName: node
+  linkType: hard
+
+"jwt-decode@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "jwt-decode@npm:4.0.0"
+  checksum: 10c0/de75bbf89220746c388cf6a7b71e56080437b77d2edb29bae1c2155048b02c6b8c59a3e5e8d6ccdfd54f0b8bda25226e491a4f1b55ac5f8da04cfbadec4e546c
   languageName: node
   linkType: hard
 

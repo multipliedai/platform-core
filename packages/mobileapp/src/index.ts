@@ -10,6 +10,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import { jwtDecode } from "jwt-decode";
 import { AzureEntraClaims } from './types/user';
 import { DateTime } from "luxon";
+import * as ReactNative from 'react-native'
 
 // Custom UUID v4 generator
 function generateUUID(): string {

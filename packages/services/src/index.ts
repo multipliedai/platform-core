@@ -5,3 +5,4 @@
  */
 // export * from './logger';
 // export * from './dbUtils';
+export * from "./base64-decoder";

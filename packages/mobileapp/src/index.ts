@@ -264,52 +264,6 @@ function normalizeHeader(h: string): string {
   return h.toLowerCase().replace(/[^a-z0-9]+/g, "").trim();
 }
 
-// Parse Employees CSV into objects: expects headers like name,email,role,department,status,joindate,age,phone,additionaldetails
-export async function parseEmployeesCsvFile(file: File): Promise<any[]> {
-  const text = await readFileAsText(file);
-  const rows = parseCsvText(text);
-  if (rows.length === 0) return [];
-  const headers = rows[0].map(normalizeHeader);
-  const idx = (key: string) => headers.indexOf(key);
-  const iName = idx("name");
-  const iEmail = idx("email");
-  const iRole = idx("role");
-  const iDepartment = idx("department");
-  const iStatus = idx("status");
-  const iJoinDate = idx("joindate");
-  const iAge = idx("age");
-  const iPhone = idx("phone");
-  const iAdditionalDetails = idx("additionaldetails");
-
-  const items: any[] = [];
-  for (let r = 1; r < rows.length; r++) {
-    const row = rows[r];
-    const name = iName >= 0 ? row[iName] ?? "" : "";
-    const email = iEmail >= 0 ? row[iEmail] ?? "" : "";
-    const role = iRole >= 0 ? row[iRole] ?? "" : "";
-    const department = iDepartment >= 0 ? row[iDepartment] ?? "" : "";
-    const status = iStatus >= 0 ? (row[iStatus] ?? "active") : "active";
-    const joinDate = iJoinDate >= 0 ? row[iJoinDate] ?? new Date().toISOString().split('T')[0] : new Date().toISOString().split('T')[0];
-    const age = iAge >= 0 ? (row[iAge] ? parseInt(row[iAge]) || 0 : 0) : 0;
-    const phone = iPhone >= 0 ? row[iPhone] ?? "" : "";
-    const additional_details = iAdditionalDetails >= 0 ? row[iAdditionalDetails] ?? "" : "";
-    
-    if (!name && !email) continue;
-    items.push({ 
-      name, 
-      email, 
-      role, 
-      department, 
-      status, 
-      joinDate, 
-      age, 
-      phone, 
-      additional_details 
-    });
-  }
-  return items;
-}
-
 export const setLocalStorageItem = async (key: string, value: any) => {
   try {
     // Handle empty string case specially

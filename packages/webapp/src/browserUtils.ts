@@ -4,6 +4,15 @@
  */
 
 // Read a File object as text (DOM File + FileReader – web only)
+
+import { v4 as uuid } from "uuid";
+
+export const uniqueId = () => uuid();
+
+export const onlyUnique = <T>(value: T, index: number, array: T[]) => {
+  return array.indexOf(value) === index;
+};
+
 export function readFileAsText(file: File): Promise<string> {
   return new Promise((resolve, reject) => {
     const reader = new FileReader();

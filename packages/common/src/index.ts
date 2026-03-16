@@ -6,7 +6,6 @@
  */
 // export * from './types';
 // export * from './schemas';
-import { v4 as uuid } from "uuid";
 import { isEqual } from "lodash";
 import moment from "moment";
 import { toLocaleStringWithTimezone, toLocaleTimeStringWithTimezone, toLocaleDateStringWithTimezone, getStartOfDayInTimezone, getEndOfDayInTimezone } from "./timezone-date-conversion";
@@ -26,6 +25,16 @@ export const uniqueId = () => generateUUID();
 export const onlyUnique = <T>(value: T, index: number, array: T[]) => {
   return array.indexOf(value) === index;
 };
+
+export const generateRandomString = (length = 30) => {
+  let result = '';
+  let characters = 'abcdefghijklmnopqrstuvwxyz0123456789';
+  let charactersLength = characters.length;
+  for (let i = 0; i < length; i++) {
+    result += characters.charAt(Math.floor(Math.random() * charactersLength));
+  }
+  return result;
+}
 
 export function generateFilename(blobType: string) {
   let extension;

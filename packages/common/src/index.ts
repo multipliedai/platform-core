@@ -4,8 +4,8 @@
  * Safe for webapp and mobileapp (no DOM/localStorage).
  * Browser-only utils (localStorage, FileReader) live in @platform-core/webapp.
  */
-export * from './util/util';
-export * from './util/timezone-date-conversion';
+export * from './utils/util';
+export * from './utils/timezone-date-conversion';
 export * from './types/user/user/model';
 export * from './types/user/user-location/model';
 export * from './types/user/organization/model';

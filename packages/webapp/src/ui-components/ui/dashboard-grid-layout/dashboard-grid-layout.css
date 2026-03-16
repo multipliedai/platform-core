@@ -1,0 +1,4 @@
+/* Hide the default corner/arrow graphics on resize handles; resizing still works by dragging the edge. */
+.dashboard-grid-layout .react-grid-item > .react-resizable-handle::after {
+  display: none;
+}

@@ -5,6 +5,7 @@
   "main": "src/index.ts",
   "types": "src/index.ts",
   "dependencies": {
+    "@apollo/client": "^4.1.6",
     "lodash": "^4.17.23",
     "luxon": "^3.7.2",
     "moment": "^2.30.1",

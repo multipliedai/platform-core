@@ -1,5 +1,7 @@
 {
   "name": "platform-core",
+  "version": "1.0.3",
+  "tag": "v1.0.3",
   "private": true,
   "description": "Core shared packages for web, mobile, and backend services.",
   "workspaces": [

@@ -1,13 +1,13 @@
 {
   "name": "platform-core",
-  "version": "1.0.3",
-  "tag": "v1.0.3",
+  "version": "1.0.6",
+  "tag": "v1.0.6",
   "private": true,
   "description": "Core shared packages for web, mobile, and backend services.",
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
-    "release:patch": "node -e \"const fs=require('fs');const pkg=require('./package.json');const [maj,min,pat]=pkg.version.split('.').map(Number);const next=maj+'.'+min+'.'+(pat+1);pkg.version=next;pkg.tag='v'+next;fs.writeFileSync('package.json',JSON.stringify(pkg,null,2));\" && git tag v%npm_package_version%"
+    "release:patch": "node -e \"const fs=require('fs');const pkg=require('./package.json');const [maj,min,pat]=pkg.version.split('.').map(Number);const next=maj+'.'+min+'.'+(pat+1);pkg.version=next;pkg.tag='v'+next;fs.writeFileSync('package.json',JSON.stringify(pkg,null,2));\" && git tag v%npm_package_version% && git push origin v%npm_package_version%"
   }
 }

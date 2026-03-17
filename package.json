@@ -8,6 +8,6 @@
     "packages/*"
   ],
   "scripts": {
-    "release:patch": "node -e \"const fs=require('fs');const pkg=require('./package.json');const [maj,min,pat]=pkg.version.split('.').map(Number);const next=maj+'.'+min+'.'+(pat+1);pkg.version=next;pkg.tag='v'+next;fs.writeFileSync('package.json',JSON.stringify(pkg,null,2));\" && git tag v%npm_package_version% && git push origin v%npm_package_version%"
+    "release:patch": "git tag v%npm_package_version% && git push origin v%npm_package_version% && node -e \"const fs=require('fs');const pkg=require('./package.json');const [maj,min,pat]=pkg.version.split('.').map(Number);const next=maj+'.'+min+'.'+(pat+1);pkg.version=next;pkg.tag='v'+next;fs.writeFileSync('package.json',JSON.stringify(pkg,null,2));\""
   }
 }

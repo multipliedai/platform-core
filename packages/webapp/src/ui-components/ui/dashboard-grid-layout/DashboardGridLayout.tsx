@@ -9,7 +9,7 @@ import {
   type DashboardItemId,
 } from "./types";
 import { GripHorizontal } from "lucide-react";
-import { toTitleCase } from "@/util/util";
+import { toTitleCase } from "../../../../../common/src/utils/util";
 
 const GridLayout = ReactGridLayout.WidthProvider(ReactGridLayout);
 

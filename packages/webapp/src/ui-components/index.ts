@@ -34,7 +34,6 @@ export * from "./audio/recorder";
 
 export * from "./common/audioGrid";
 export * from "./common/audioPlayer";
-export * from "./common/audioVisualizer";
 export * from "./common/calendarCard";
 export * from "./common/customCasCader";
 export * from "./common/customVisualizer";
@@ -49,4 +48,6 @@ export * from "./common/tablePagination";
 export * from "./common/videoGrid";
 export * from "./common/videopreview";
 export * from "./common/voiceTextInput";
+
+export * from "./audioVisualizer"
 

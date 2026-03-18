@@ -49,5 +49,10 @@ export * from "./common/videoGrid";
 export * from "./common/videopreview";
 export * from "./common/voiceTextInput";
 
-export * from "./audioVisualizer"
+export * from './AccessDeniedView';
+export * from './aiProcessor';
+export * from "./audioVisualizer";
+export * from "./customSpinner";
+export * from "./securityLoader";
+export * from "./wind-loader";
 

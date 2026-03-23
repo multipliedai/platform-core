@@ -28,4 +28,5 @@ export * from './types/indoor-positioning/layout/model';
 export * from './types/indoor-positioning/fingerprints/model';
 export * from './types/indoor-positioning/tracking/model';
 export * from './types/indoor-positioning/model-training/model';
+export * from './graphql';
 // export * from './schemas';

@@ -30,3 +30,4 @@ export const GET_GUARD_POST_SHIFT_SUMMARY_HISTORY = gql`
   }
 `;
 
+export * from './updates';

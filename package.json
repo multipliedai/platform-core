@@ -1,17 +1,9 @@
 {
-  "name": "@multipliedai/platform-core",
+  "name": "platform-core",
   "version": "1.0.16",
   "tag": "v1.0.16",
   "private": true,
   "description": "Core shared packages for web, mobile, and backend services.",
-  "main": "./packages/common/src/index.ts",
-  "types": "./packages/common/src/index.ts",
-  "exports": {
-    ".": {
-      "types": "./packages/common/src/index.ts",
-      "default": "./packages/common/src/index.ts"
-    }
-  },
   "dependencies": {
     "@apollo/client": "^4.1.6",
     "graphql": "16.13.1",

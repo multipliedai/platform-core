@@ -3,24 +3,6 @@
   "version": "1.0.0",
   "main": "src/index.ts",
   "types": "src/index.ts",
-  "exports": {
-    ".": {
-      "types": "./src/index.ts",
-      "default": "./src/index.ts"
-    },
-    "./graphql": {
-      "types": "./src/graphql/index.ts",
-      "default": "./src/graphql/index.ts"
-    },
-    "./graphql/foc-gpt": {
-      "types": "./src/graphql/foc-gpt/index.ts",
-      "default": "./src/graphql/foc-gpt/index.ts"
-    },
-    "./graphql/foc-gpt/artifacts": {
-      "types": "./src/graphql/foc-gpt/artifacts.ts",
-      "default": "./src/graphql/foc-gpt/artifacts.ts"
-    }
-  },
   "dependencies": {
     "@apollo/client": "^4.1.6",
     "graphql": "16.13.1",

@@ -197,14 +197,14 @@ __metadata:
     "@types/lodash": "npm:^4.17.0"
     "@types/luxon": "npm:^3.7.1"
     "@types/uuid": "npm:^10.0.0"
-    graphql: "npm:^16.13.1"
+    graphql: "npm:^16.8.1"
     lodash: "npm:^4.17.23"
     luxon: "npm:^3.7.2"
     moment: "npm:^2.30.1"
     rxjs: "npm:^7.8.2"
     uuid: "npm:^13.0.0"
   peerDependencies:
-    graphql: ">=16.13.1"
+    graphql: ">=16.8.1"
     react: ">=18.0.0"
     react-dom: ">=18.0.0"
     rxjs: ">=7.8.2"
@@ -2372,7 +2372,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"graphql@npm:^16.13.1":
+"graphql@npm:^16.8.1":
   version: 16.13.1
   resolution: "graphql@npm:16.13.1"
   checksum: 10c0/0c7a9aea59504fbf3e0674f13ddb82935780f2a388e1db0ef41c3711c0ff8cb0a871c50d30d2d5288f32b946af3570d6f9ba8d13b03a330336f27121f9ac7a6b
@@ -2551,6 +2551,14 @@ __metadata:
 "platform-core@workspace:.":
   version: 0.0.0-use.local
   resolution: "platform-core@workspace:."
+  dependencies:
+    "@apollo/client": "npm:^4.1.6"
+    graphql: "npm:^16.8.1"
+    lodash: "npm:^4.17.23"
+    luxon: "npm:^3.7.2"
+    moment: "npm:^2.30.1"
+    rxjs: "npm:^7.8.2"
+    uuid: "npm:^13.0.0"
   languageName: unknown
   linkType: soft
 

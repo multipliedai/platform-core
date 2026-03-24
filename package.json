@@ -6,7 +6,7 @@
   "description": "Core shared packages for web, mobile, and backend services.",
   "dependencies": {
     "@apollo/client": "^4.1.6",
-    "graphql": "16.13.1",
+    "graphql": "^16.13.1",
     "lodash": "^4.17.23",
     "luxon": "^3.7.2",
     "moment": "^2.30.1",
@@ -16,17 +16,6 @@
   "workspaces": [
     "packages/*"
   ],
-  "overrides": {
-    "graphql": "16.13.1"
-  },
-  "pnpm": {
-    "overrides": {
-      "graphql": "16.13.1"
-    }
-  },
-  "resolutions": {
-    "graphql": "16.13.1"
-  },
   "scripts": {
     "release:patch": "node -e \"const fs=require('fs');const {execSync}=require('child_process');const pkgPath='./package.json';const pkg=JSON.parse(fs.readFileSync(pkgPath,'utf8'));const [maj,min,pat]=String(pkg.version).split('.').map(Number);const next=`${maj}.${min}.${pat+1}`;pkg.version=next;pkg.tag=`v${next}`;fs.writeFileSync(pkgPath, JSON.stringify(pkg,null,2)+'\\n');execSync(`git tag v${next}`,{stdio:'inherit'});execSync(`git push origin v${next}`,{stdio:'inherit'});\""
   }

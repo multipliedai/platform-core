@@ -1,0 +1,1 @@
+{"version":3,"file":"ems-report-model.d.ts","sourceRoot":"","sources":["../../../../../../../packages/common/src/types/intracom/documents/ems-report-model.ts"],"names":[],"mappings":"AAAA,MAAM,WAAW,SAAS;IACxB,SAAS,EAAE,MAAM,CAAC;IAClB,WAAW,EAAE,MAAM,CAAC;IACpB,QAAQ,EAAE,MAAM,CAAC;IACjB,YAAY,CAAC,EAAE,MAAM,CAAC;CACvB"}

@@ -1,20 +1,9 @@
 {
-  "name": "@multipliedai/platform-core",
+  "name": "platform-core",
   "version": "1.0.17",
   "tag": "v1.0.17",
   "private": true,
   "description": "Core shared packages for web, mobile, and backend services.",
-  "main": "./dist/src/index.js",
-  "types": "./dist/src/index.d.ts",
-  "exports": {
-    ".": {
-      "types": "./dist/src/index.d.ts",
-      "default": "./dist/src/index.js"
-    }
-  },
-  "files": [
-    "dist/**"
-  ],
   "dependencies": {
     "@apollo/client": "^4.1.6",
     "graphql": "^16.8.1",
@@ -30,11 +19,6 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "tsc -p tsconfig.build.json",
     "release:patch": "node -e \"const fs=require('fs');const {execSync}=require('child_process');const pkgPath='./package.json';const pkg=JSON.parse(fs.readFileSync(pkgPath,'utf8'));const [maj,min,pat]=String(pkg.version).split('.').map(Number);const next=`${maj}.${min}.${pat+1}`;pkg.version=next;pkg.tag=`v${next}`;fs.writeFileSync(pkgPath, JSON.stringify(pkg,null,2)+'\\n');execSync(`git tag v${next}`,{stdio:'inherit'});execSync(`git push origin v${next}`,{stdio:'inherit'});\""
-  },
-  "devDependencies": {
-    "@types/node": "^25.5.0",
-    "typescript": "^6.0.2"
   }
 }

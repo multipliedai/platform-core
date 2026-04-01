@@ -3,6 +3,7 @@ export * from './channel-user';
 export * from './channels';
 export * from './config';
 export * from './documents';
+export * from './edge-devices'
 export * from './feedback';
 export * from './guard-post-shift-summary';
 export * from './incidents';

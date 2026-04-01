@@ -6,7 +6,7 @@ export type InsightDataStatus = "active" | "resolved" | "monitoring" | "escalate
 
 export type ChartTimePeriod = "daily" | "weekly" | "monthly" | "yearly";
 
-export type ChartDataSource = "activities" | "messages" | "both";
+export type ChartDataSource = "activities" | "messages" | "documents" | "both";
 
 // Stack data for stacked charts
 export interface StackData {

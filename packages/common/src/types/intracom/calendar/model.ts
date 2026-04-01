@@ -61,6 +61,8 @@ export interface CalendarEvent {
   // Date and time
   startDate: number; // Unix timestamp
   endDate: number; // Unix timestamp
+  publicStartDate?: number; // Unix timestamp
+  publicEndDate?: number; // Unix timestamp
   isAllDay: boolean;
   timezone?: string; // IANA timezone (e.g., "America/New_York")
   

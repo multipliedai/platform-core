@@ -789,7 +789,10 @@ __metadata:
   dependencies:
     "@platform-core/common": "npm:1.0.0"
     "@react-native-async-storage/async-storage": "npm:^3.0.1"
+    "@simform_solutions/react-native-audio-waveform": "npm:^2.1.6"
     jwt-decode: "npm:^4.0.0"
+    lucide-react-native: "npm:^0.546.0"
+    react-native-blob-util: "npm:^0.24.7"
   peerDependencies:
     react: ">=18.0.0"
     react-native: ">=0.72.0"
@@ -2512,6 +2515,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@simform_solutions/react-native-audio-waveform@npm:^2.1.6":
+  version: 2.1.6
+  resolution: "@simform_solutions/react-native-audio-waveform@npm:2.1.6"
+  dependencies:
+    lodash: "npm:^4.17.21"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: 10c0/546967cfe103f333a5f4615436da2fcc3909b79d30ac24a576c52291092dde7e673b4b767c5fa2350306dc99e084be88a645482ccce2bcce16632f360a88b848
+  languageName: node
+  linkType: hard
+
 "@sinclair/typebox@npm:^0.27.8":
   version: 0.27.10
   resolution: "@sinclair/typebox@npm:0.27.10"
@@ -3115,6 +3130,13 @@ __metadata:
   version: 4.0.4
   resolution: "balanced-match@npm:4.0.4"
   checksum: 10c0/07e86102a3eb2ee2a6a1a89164f29d0dbaebd28f2ca3f5ca786f36b8b23d9e417eb3be45a4acf754f837be5ac0a2317de90d3fcb7f4f4dc95720a1f36b26a17b
+  languageName: node
+  linkType: hard
+
+"base-64@npm:0.1.0":
+  version: 0.1.0
+  resolution: "base-64@npm:0.1.0"
+  checksum: 10c0/fe0dcf076e823f04db7ee9b02495be08a91c445fbc6db03cb9913be9680e2fcc0af8b74459041fe08ad16800b1f65a549501d8f08696a8a6d32880789b7de69d
   languageName: node
   linkType: hard
 
@@ -3925,6 +3947,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"glob@npm:13.0.1":
+  version: 13.0.1
+  resolution: "glob@npm:13.0.1"
+  dependencies:
+    minimatch: "npm:^10.1.2"
+    minipass: "npm:^7.1.2"
+    path-scurry: "npm:^2.0.0"
+  checksum: 10c0/af7b863dec8dff74f61d7d6e53104e1f6bbdd482157a196cade8ed857481e876ec35181b38a059b2a7b93ea3b08248f4ff0792fef6dc91814fd5097a716f48e4
+  languageName: node
+  linkType: hard
+
 "glob@npm:^13.0.0":
   version: 13.0.6
   resolution: "glob@npm:13.0.6"
@@ -4450,7 +4483,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash@npm:^4.17.23":
+"lodash@npm:^4.17.21, lodash@npm:^4.17.23":
   version: 4.17.23
   resolution: "lodash@npm:4.17.23"
   checksum: 10c0/1264a90469f5bb95d4739c43eb6277d15b6d9e186df4ac68c3620443160fc669e2f14c11e7d8b2ccf078b81d06147c01a8ccced9aab9f9f63d50dcf8cace6bf6
@@ -4500,6 +4533,17 @@ __metadata:
   dependencies:
     yallist: "npm:^3.0.2"
   checksum: 10c0/89b2ef2ef45f543011e38737b8a8622a2f8998cddf0e5437174ef8f1f70a8b9d14a918ab3e232cb3ba343b7abddffa667f0b59075b2b80e6b4d63c3de6127482
+  languageName: node
+  linkType: hard
+
+"lucide-react-native@npm:^0.546.0":
+  version: 0.546.0
+  resolution: "lucide-react-native@npm:0.546.0"
+  peerDependencies:
+    react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
+    react-native: "*"
+    react-native-svg: ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0
+  checksum: 10c0/f06062cc61b362f008eaab4c08d62ca8c1fd39616d9c41c7d96c9014349b1e7f2a6d019c6edce07c0654172497e657bf7dd1653690e78c2ad6344299e4d7d6a0
   languageName: node
   linkType: hard
 
@@ -4828,7 +4872,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minimatch@npm:^10.2.2":
+"minimatch@npm:^10.1.2, minimatch@npm:^10.2.2":
   version: 10.2.4
   resolution: "minimatch@npm:10.2.4"
   dependencies:
@@ -5159,7 +5203,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"path-scurry@npm:^2.0.2":
+"path-scurry@npm:^2.0.0, path-scurry@npm:^2.0.2":
   version: 2.0.2
   resolution: "path-scurry@npm:2.0.2"
   dependencies:
@@ -5388,6 +5432,19 @@ __metadata:
   version: 18.3.1
   resolution: "react-is@npm:18.3.1"
   checksum: 10c0/f2f1e60010c683479e74c63f96b09fb41603527cd131a9959e2aee1e5a8b0caf270b365e5ca77d4a6b18aae659b60a86150bb3979073528877029b35aecd2072
+  languageName: node
+  linkType: hard
+
+"react-native-blob-util@npm:^0.24.7":
+  version: 0.24.7
+  resolution: "react-native-blob-util@npm:0.24.7"
+  dependencies:
+    base-64: "npm:0.1.0"
+    glob: "npm:13.0.1"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: 10c0/0e4d1aa06656da1fe26c18ef36746f85abbf874dd39dde2aaf79c4ee49afa9c0cd7a68c3a8cfe487f7ca9a1e9e00ac2445577967c5e4ce9f64436da49796ce13
   languageName: node
   linkType: hard
 

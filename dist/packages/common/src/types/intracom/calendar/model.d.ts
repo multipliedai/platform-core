@@ -53,6 +53,8 @@ export interface CalendarEvent {
     visibility: CalendarEventVisibility;
     startDate: number;
     endDate: number;
+    publicStartDate?: number;
+    publicEndDate?: number;
     isAllDay: boolean;
     timezone?: string;
     location?: CalendarEventLocation;

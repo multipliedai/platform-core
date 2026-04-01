@@ -1,7 +1,7 @@
 export type IntracomInsightType = "security" | "catering" | "operational" | "safety" | "maintenance" | "compliance" | "guest-experience" | "parking" | "cleanliness" | "event-operations" | "reputation" | "communication" | "predictive" | "resource" | "knowledge" | "predictive" | "spatial";
 export type InsightDataStatus = "active" | "resolved" | "monitoring" | "escalated";
 export type ChartTimePeriod = "daily" | "weekly" | "monthly" | "yearly";
-export type ChartDataSource = "activities" | "messages" | "both";
+export type ChartDataSource = "activities" | "messages" | "documents" | "both";
 export interface StackData {
     value: number;
     valueIds: string[];

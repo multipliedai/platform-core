@@ -166,4 +166,5 @@ export interface IntracomConfigPostListItem {
   postId: string;
   title: string;
   description: string;
+  allowedGolfCart?: boolean;
 }

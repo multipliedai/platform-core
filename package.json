@@ -1,7 +1,7 @@
 {
   "name": "@multipliedai/platform-core",
-  "version": "1.0.19",
-  "tag": "v1.0.19",
+  "version": "1.0.20",
+  "tag": "v1.0.20",
   "private": true,
   "description": "Core shared packages for web, mobile, and backend services.",
   "main": "./dist/src/index.js",
@@ -58,8 +58,7 @@
   ],
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
-    "release:patch": "node -e \"const fs=require('fs');const {execSync}=require('child_process');const pkgPath='./package.json';const pkg=JSON.parse(fs.readFileSync(pkgPath,'utf8'));const [maj,min,pat]=String(pkg.version).split('.').map(Number);const next=`${maj}.${min}.${pat+1}`;pkg.version=next;pkg.tag=`v${next}`;fs.writeFileSync(pkgPath, JSON.stringify(pkg,null,2)+'\\n');execSync(`git tag v${next}`,{stdio:'inherit'});execSync(`git push origin v${next}`,{stdio:'inherit'});\"",
-    "publish": "yarn build && npm run release:patch"
+    "release:patch": "node -e \"const fs=require('fs');const {execSync}=require('child_process');const pkgPath='./package.json';const pkg=JSON.parse(fs.readFileSync(pkgPath,'utf8'));const [maj,min,pat]=String(pkg.version).split('.').map(Number);const next=`${maj}.${min}.${pat+1}`;pkg.version=next;pkg.tag=`v${next}`;fs.writeFileSync(pkgPath, JSON.stringify(pkg,null,2)+'\\n');execSync(`git tag v${next}`,{stdio:'inherit'});execSync(`git push origin v${next}`,{stdio:'inherit'});\""
   },
   "devDependencies": {
     "@types/node": "^22.0.0",

@@ -73,7 +73,8 @@ export interface IntracomConfigWhitelistedPhoneNumbers {
 }
 
 export interface IntracomConfigWristbandConfig {
-  date: number; // in ms from 12:00 AM midnight
+  date?: number; // in ms from 12:00 AM midnight
+  dateOfTheMonth?: number; // 1-31  
   colorName: string;
   colorCode: string;
 }

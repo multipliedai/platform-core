@@ -95,6 +95,7 @@ export interface NotificationConfigItem {
   sendToCurrentUser?: boolean; // send notification to current user
   recipients_phone_numbers?: string[];
   recipients_userIds?: string[];
+  closeAfter?: number; // close after in ms
 }
 
 export interface IntracomConfigNotificationConfig {

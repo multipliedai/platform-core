@@ -150,6 +150,7 @@ export interface EventPlanExtraction {
     spaces: EventSpaces;
     operations: EventOperations;
     exceptions: EventExceptions;
+    special_instructions?: string[];
 }
 export interface EventPlanOverlay {
     security_focus_points?: string[];

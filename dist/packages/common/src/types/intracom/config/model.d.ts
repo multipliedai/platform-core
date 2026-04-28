@@ -52,7 +52,8 @@ export interface IntracomConfigWhitelistedPhoneNumbers {
     }[];
 }
 export interface IntracomConfigWristbandConfig {
-    date: number;
+    date?: number;
+    dateOfTheMonth?: number;
     colorName: string;
     colorCode: string;
 }
@@ -67,6 +68,7 @@ export interface NotificationConfigItem {
     sendToCurrentUser?: boolean;
     recipients_phone_numbers?: string[];
     recipients_userIds?: string[];
+    closeAfter?: number;
 }
 export interface IntracomConfigNotificationConfig {
     notificationConfigs: NotificationConfigItem[];

@@ -4,7 +4,7 @@ export interface TimeWindow {
   notes?: string;
 }
 export interface TaskType {
-  type: "securing" | "request";
+  type: "securing" | "request"|"announcement";
   status?: "secured" | "unsecured";
 }
 
@@ -17,7 +17,7 @@ export interface Task {
   task_type?: TaskType;
   segmentIds?: string[];
   is_done?: boolean;
-  status?: "pending" | "in-progress" | "completed";
+  status?: "pending" | "in-progress" | "completed"|"announcement";
   signalIds?: string[];
   relatedPosts?: string[];
   createdAt?: number;

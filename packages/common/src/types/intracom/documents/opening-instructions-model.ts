@@ -62,6 +62,7 @@ export interface HangTagInstruction {
 
 export interface IntracomDocumentOpeningInstructions {
   event_name: string;
+  closing_instructions?: Task[];
   venue: string;
   event_date: number;
   hang_tags?: HangTagInstruction;
